@@ -17,7 +17,7 @@ import java.util.List;
  * Created by: HuangFuBin
  * Date: 2018/6/5
  * Time: 23:34
- * Such description:
+ * Such description: 将object转为jsong格式存储
  */
 @Configuration
 public class RedisConfig {
@@ -32,6 +32,7 @@ public class RedisConfig {
         return template;
     }
 
+    //规则
     @Bean
     public RedisCacheManager cacheManager(RedisTemplate<Object, Employee> redisTemplate) {
         RedisCacheManager cacheManager = new RedisCacheManager(redisTemplate);
