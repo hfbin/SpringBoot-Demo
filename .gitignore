@@ -1,9 +1,7 @@
 target/
-src/
 .idea/
 .mvn/
 mvnw
 mvnw.cmd
-pom.xml
 SpringBootDemo.iml
 
