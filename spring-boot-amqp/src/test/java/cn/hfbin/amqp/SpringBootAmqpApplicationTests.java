@@ -87,7 +87,6 @@ public class SpringBootAmqpApplicationTests {
 		user.setId(1);
 		user.setUsername("hfbin");
 		user.setAge(15);
-
 		rabbitTemplate.convertAndSend("exchange.fanout", "" , user);
 	}
 
